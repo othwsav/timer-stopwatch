@@ -30,6 +30,7 @@ body {
     margin: 0;
     font-family: 'Muli', sans-serif;
     color: var(--textColor);
+    min-height: 950px;
 }
 
 body>div.clock {
