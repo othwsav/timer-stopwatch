@@ -198,12 +198,13 @@ h2::after {
 
 .theme-switcher{
     position: absolute;
-    right: 10px;
-    top: 40px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 140px;
     display: flex;
 }
 .theme {
-    padding: 10px min(1.2vw, 15px);
+    padding: 10px max(1.2vw, 15px);
     background: var(--btColor);
     cursor: pointer;
     user-select: none;
