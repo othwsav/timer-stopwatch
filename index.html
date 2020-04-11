@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timer & Stopwatch</title>
+	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="theme-switcher">
+		<div class="theme active">Default</div>
+		<div class="theme" data-theme="theme1">theme 1</div>
+		<div class="theme" data-theme="theme2">theme 2</div>
+		<div class="theme" data-theme="theme3">theme 3</div>
+	</div>
+	<div class="clock">
+		<div class="line"></div>
+		<div class="pointer"></div>
+		<div class="needle"></div>
+		<div class="timer">
+			<h2>Timer</h3>
+				<div class="inputs">
+					<input type="number" class="duration h" value="00" min="0" max="99">
+					<label>hours </label>
+					<input type="number" class="duration m" value="00" min="0" max="59">
+					<label>minutes </label>
+					<input type="number" class="duration s" value="00" min="0" max="59">
+					<label>seconds</label>
+				</div>
+				<div class="remaining res">
+					<span>00</span>h <span>00</span>min <span>00</span>s
+				</div>
+				<div class="actions">
+					<div class="button start">Start</div>
+					<div class="button hidden toggle pause">Pause</div>
+					<div class="button hidden reset">Reset</div>
+				</div>
+		</div>
+		<div class="stopwatch">
+			<h2>Stopwatch</h2>
+			<div class="time res">00:00:00:00</div>
+			<div class="actions">
+				<div class="button start">Start</div>
+				<div class="button hidden toggle pause">Pause</div>
+				<div class="button hidden reset">Reset</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<script defer src="main.js"></script>
+</body>
+
+</html>
