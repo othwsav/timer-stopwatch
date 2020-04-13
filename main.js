@@ -278,6 +278,7 @@ $(".stopwatch .button.toggle").click(function () {
 
 
 // Themes and local Storage Part Start 
+
 let firstTheme = localStorage.getItem("theme"),
     activeChild = localStorage.getItem("activeIndex")
 if(firstTheme && activeChild){
